@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script src="js/spaceCalculator.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
+<link rel="stylesheet" type="text/css" href="css/form.css">
+<script type="text/javascript">
+	$(document).ready(function(){
+    $("#content-form").validate({
+       rules: {
+         age_digit: {
+            required: true,
+			digits: true
+         },
+		 time_unit: {
+			required: true,
+		 }
+        },
+       messages: {
+		age_digit: {
+			required: "Please enter the digits of your age",
+			digits: "Age must be a number"
+		},
+		time_unit: {
+			required: "Please select a time unit"
+		},
+       }
+    })
+  });
+</script>
+</head>
+<body>
+	<form id="content-form" onsubmit="getInfo()" action="html/calculateResult.html">
+		<fieldset>
+		<h1>Space Age Calculator</h1><br><br>
+		<label for="age_digit">Age</label><br>
+		<input type="text" name="age_digit" id="age_digit" placeholder="Please enter age digit">
+		<br>
+		<br>
+		<br>
+		<label for="time_unit">Unit of Time</label><br>
+		<select id="time_unit" name="time_unit">
+			<option value="">--Select--</option>
+			<option value="seconds">Seconds</option>
+			<option value="minutes">Minutes</option>
+			<option value="hours">Hours</option>
+			<option value="days">Days</option>
+			<option value="weeks">Weeks</option>
+			<option value="months">Months</option>
+			<option value="years">Years</option>
+		</select>
+		<br><br><br>
+		<input class="submit" id="submit" type="submit" value="Submit!">
+		</fieldset>
+	</form>
+</body>
+</html>

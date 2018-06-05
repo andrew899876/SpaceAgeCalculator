@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<script src="../jquery.js"></script>
+<script src="../js/spaceCalculator.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/result.css">
+</head>
+<body onload="getDetails()">
+<div id="content-results" name="content-results">
+	<br><br><br><br><br><br><br><br><br><br>
+	<h1>Space Age Calculator</h1><br><br>
+</div>
+<br>
+<div id="planets">
+	<div id="mercury">
+		<h2>Mercury</h2><br>
+		<img src="../img/mercury.png" />
+		<br>
+		<h3 id="mercury_age"></h3>
+		<p>YEARS OLD</p>
+	</div>
+	<br><br>
+	<div id="venus">
+		<h2>Venus</h2><br>
+		<img src="../img/venus.png" />
+		<br>
+		<h3 id="venus_age"></h3>
+		<p>YEARS OLD</p>
+	</div>
+	<br><br>
+	<div id="earth">
+		<h2>Earth</h2><br>
+		<img src="../img/earth.png" />
+		<br>
+		<h3 id="earth_age"></h3>
+		<p>YEARS OLD</p>
+	</div>
+	<br><br>
+	<div id="mars">
+		<h2>Mars</h2><br>
+		<img src="../img/mars.png" />
+		<br>
+		<h3 id="mars_age"></h3>
+		<p>YEARS OLD</p>
+	</div>
+	<br><br>
+	<div id="jupiter">
+		<h2>Jupiter</h2><br>
+		<img src="../img/jupiter.png" />
+		<br>
+		<h3 id="jupiter_age"></h3>
+		<p>YEARS OLD</p>
+	</div>
+	<br><br>
+	<div id="saturn">
+		<h2>Saturn</h2><br>
+		<img src="../img/saturn.png" />
+		<br>
+		<h3 id="saturn_age"></h3>
+		<p>YEARS OLD</p>
+	</div>
+	<br><br>
+	<div id="uranus">
+		<h2>Uranus</h2><br>
+		<img src="../img/uranus.png" />
+		<br>
+		<h3 id="uranus_age"></h3>
+		<p>YEARS OLD</p>
+	</div>
+	<br><br>
+	<div id="neptune">
+		<h2>Neptune</h2><br>
+		<img src="../img/neptune.png" />
+		<br>
+		<h3 id="neptune_age"></h3>
+		<p>YEARS OLD</p>
+	</div>
+	<br><br>
+	<div id="pluto">
+		<h2>Pluto</h2><br>
+		<img src="../img/pluto.png" />
+		<br>
+		<h3 id="pluto_age"></h3>
+		<p>YEARS OLD</p>
+	</div>
+</div>
+<br><br><br>
+<div id="action">
+	<div id="return">
+		<form action="../calculateForm.html" method="post">
+			<input class="submit" id="submit" type="submit" value="Return" onclick="">
+		</form>
+		</div>
+	<div id="credit_text"><br><br>
+		<p>Developed By Andrew Stevenson</p><br>
+		<p>Email - andrew899876@gmail.com</p><br>
+	</div>
+</div>
+</div>
+<script>
+window.onload = getAge();
+</script>
+</body>
+</html>

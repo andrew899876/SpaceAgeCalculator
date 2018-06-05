@@ -1,0 +1,106 @@
+body{
+		background: url(../img/space2.jpeg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	
+	div {
+		break-word:
+	}
+	
+	#content-results{
+		width: 100%;
+		border-radius: 5px;
+		margin: 0 auto;
+		position: relative;
+		top: 45%;
+	}
+	
+	h1, h3, p, span{
+		margin: 0 auto;
+		text-align:center;
+		font-weight: 700;
+		font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+		color:white;
+	}
+	
+	#planets{
+		display: flex;
+		position: relative;
+	}
+	
+	#mercury, #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune, #pluto{
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 20px;
+		border-radius: 10px;
+		width: 150px;
+		margin: 0 auto;
+		position: relative;
+		font-size: 0.9vw;
+	}
+	
+	img{
+		max-width: 125px;
+		max-height: 125px;
+		min-width: 25px;
+		min-height: 25px;
+		position: relative;
+		display:block;
+		margin: 0 auto;
+	}
+	h2{
+		display:table;
+		margin: 0 auto;
+		font-size: 25px;
+		font-weight: 700;
+		font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+		color:white;
+	}
+	
+	#action{
+		position: relative;
+		display: center;
+	}
+	
+	#credit_text{
+		width: 50%;
+		padding: 20px;
+		border-radius: 10px;
+		height: 50px;
+		width: 700px;
+		position: relative;
+		margin: 0 auto;
+	}
+	
+	#return{
+		margin: 0 auto;
+		padding: 20px;
+		border-radius: 10px;
+		width: 700px;
+		position: relative;
+	}
+	
+	input[type=submit]{
+		width: 25%;
+		background-color: #f2f2f2;
+		colour: white;
+		padding: 14px 20px;
+		display:table;
+		margin: 0 auto;
+		border: none;
+		border-radius: 300px;
+		cursor: pointer;
+		background-color: black;
+		color: white;
+		font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+		font-size:15px;
+		font-weight: 700;
+	
+	}
+	
+	input[type=submit]:hover{
+		background-color: white;
+		color: black;
+	}
